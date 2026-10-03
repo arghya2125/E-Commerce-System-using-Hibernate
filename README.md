@@ -127,7 +127,7 @@ EcommerceHibernate
 │
 ├── images
 │   ├── ecommerce-banner.png
-│   └── project-architecture.png
+│
 │
 ├── pom.xml
 ├── schema.sql
