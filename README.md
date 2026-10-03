@@ -141,18 +141,18 @@ EcommerceHibernate
 ### 1. Category
 Stores information about product categories.
 * **Fields:** `id`, `name`, `description`
-* **Relationship:** Category `1` ──────── `*` Product
+* **Relationship:** Category `1` ──────── `Many` Product
 
 ### 2. Product
 Stores information about products available in the store.
 * **Fields:** `id`, `name`, `price`, `stockQuantity`, `category`
-* **Relationship:** Product `*` ──────── `1` Category
+* **Relationship:** Product `Many` ──────── `1` Category
 
 ### 3. Users
 Stores user information.
 * **Fields:** `id`, `username`, `password`, `email`, `role`
 * **Supported Roles:** `ADMIN`, `CUSTOMER`
-* **Relationship:** Users `1` ──────── `*` Orders
+* **Relationship:** Users `1` ──────── `Many` Orders
 
 ### 4. Orders
 Stores information about customer orders.
